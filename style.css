@@ -1,0 +1,305 @@
+body{
+  height: 100vh;
+/*   font-family: 'Roboto', sans-serif; */
+}
+html{
+  font-family: 'Roboto', sans-serif;
+}
+
+.dayRow{
+  display: flex;
+}
+
+.dayCell{
+  width:50%;
+  height:25%;
+  border:2px solid black;
+  float:left;
+}
+
+.row {
+  display: flex;
+}
+
+#ui-column {
+  display: flex;
+  flex-direction: column;
+  width:20%;
+  border:2px solid black;
+/*   height: 100%; */
+  
+}
+#days-of-the-week{
+  display: flex;
+  width: 100px;
+  flex-direction: row;
+  justify-content:center;
+  font-family: 'Roboto', sans-serif;
+}
+
+#days-container{
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+  border: 2px solid #000000;
+  background-color:#e1e0e0;
+  
+}
+
+#page-nav-buttons{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+
+#date-and-nav-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  
+}
+
+.disabledCell{
+  background-color: #c9c9c9;
+  border:2px solid black;
+  height: 100px;
+  width: 100px;
+
+}
+
+#calendar{
+  display:flex;
+  width:50%;
+/*   height:100%; */
+  flex-direction:row;
+/*   float:right; */
+}
+
+.cell {
+  display: flex;
+  flex-direction:column;
+  overflow:auto;
+  width:100px;
+  height:100px;
+  border:2px solid black;
+}
+
+.cell:hover {
+  cursor: pointer;
+  background-color: #f0f0f0;
+}
+
+.Category{
+  display: flex;
+  border:none;
+  font-family: 'Roboto', sans-serif;
+  overflow: auto;
+}
+.RemoveButton{
+  display: flex;
+  border:none;
+  width: 100%
+  background-color: #a3a3a3;
+  font-family: 'Roboto', sans-serif;
+}
+.Item{
+  display: flex;
+  flex-direction: column;
+  border:none;
+  font-family: 'Roboto', sans-serif;
+  overflow: auto;
+}
+.ExpandButton{
+  display: flex;
+  border:none;
+  width: 100%
+  margin:auto;
+  background-color: #a3a3a3;
+  font-family: 'Roboto', sans-serif;
+  overflow: auto;
+}
+.Importance{
+  display: flex;
+}
+.CreationDate{
+  display: flex;
+  border:none;
+  font-family: 'Roboto', sans-serif;
+}
+.ItemDisplay{
+  display: flex;
+  border:none;
+  font-family: 'Roboto', sans-serif;
+  overflow:auto;
+}
+.Item:hover{
+  cursor: pointer;
+  text-decoration: line-through;
+}
+#notes{
+  display:flex;
+  border:none;
+  font-family: 'Roboto', sans-serif;
+  overflow: auto;
+}
+#to-do-options{
+  display:flex;
+  width: 50%;
+  float:left;
+  border:none;
+  font-family: 'Roboto', sans-serif;
+}
+
+#to-do-box{
+  display:flex;
+  justify-content: flex-end; 
+  height:75%;
+  border:2px solid black;
+  float:left;
+  flex-direction: column;
+} 
+.selected-cell{
+  display: flex;
+  width:100px;
+  height:100px;
+  border:2px solid black;
+  background-color: #afec9c;
+}
+#colors-list{
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+/* .colorButton selected-colorButton{
+  border: 2px solid #190c32;
+} */
+.colorButton{
+  display: flex;
+  width: 100%;
+  height: 50px;
+/*   border-radius: 10px; */
+  border-color: transparent;
+}
+
+
+/* .colorButton: hover{
+} */
+importance-filter-button{
+  display:flex;
+  flex-direction: row;
+}
+#filters{
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+}
+#to-do-list{
+  display: flex;
+  width: 20%;
+  border: 2px solid black;
+  flex-direction: column;
+}
+.page-nav{
+  display:flex;
+  height: 5%;
+  margin:auto;
+  justify-content: center;
+}
+#to-do-and-calendar{
+  width: 100%;
+  display:flex;
+  flex-direction:row;
+  justify-content:center;
+}
+#note-input{
+  display:flex;
+  height:80%;
+  border:none;
+  font-family: 'Roboto', sans-serif;
+}
+#input-list-item{
+  display:flex;
+  height:5%;
+  border:none;
+  font-family: 'Roboto', sans-serif;
+}
+#category-list{
+  font-size: x-large;
+}
+#input-importance{
+  display:flex;
+  height:5%
+  border:none;
+  font-family: 'Roboto', sans-serif;
+}
+#input-category{
+  display:flex;
+  height:5%
+  border:none;
+  font-family: 'Roboto', sans-serif;
+}
+#add-button{
+  font-size: x-large;
+  font-family: 'Roboto', sans-serif;
+  color: #000000;
+  background-color: #afec9c;
+  display:flex;
+  height:10%;
+/*   padding-left:150px;
+  padding-top: 15px; */
+  width: 100%;
+  border:none;
+}
+
+.selected navigation{
+  border:none;
+  font-size: x-large;
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  width: 100%;
+  background-color:#312163;
+  color: white;
+  justify-content:center;
+}
+
+
+.navigation{
+  border:none;
+  font-size: x-large;
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  width: 100%;
+  background-color:#0c0424;
+  color: white;
+  justify-content:center;
+}
+
+.navigation:hover{
+  background-color:#312163;
+  cursor:pointer;
+}
+#add-category-button{
+
+}
+#filters button{
+  font-size: x-large;
+  font-family: 'Roboto', sans-serif;
+  color: #000000;
+  background-color: #afec9c;
+  display:flex;
+  height:10%;
+  width: 100%;
+  border:none;
+}
+
+#page-title{
+  display:flex;
+  justify-content: center;
+}
+.visual-calendar-items{
+/*   background-color: pink; */
+  display:flex;
+  font-size:0.9rem;
+}
